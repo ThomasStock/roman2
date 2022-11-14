@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <input
-        value={number}
+        value={isNaN(number) ? "" : number}
         onChange={(e) => setNumber(parseInt(e.target.value))}
       />
       <h2>{roman}</h2>
